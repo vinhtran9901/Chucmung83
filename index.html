@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thế Giới Dễ Thương</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="assets/yeu-dung-so-dau.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="home" class="container active">
+        <h1 class="title">Chào mừng đến với thế giới dễ thương!</h1>
+        <p>Lời nhắn: Hãy luôn vui vẻ và mạnh mẽ, tớ luôn bên cậu!</p>
+        <button class="button" onclick="showPage('game')">Trò Chơi</button>
+        <button class="button" onclick="showPage('messages')">Lời Nhắn</button>
+        <div class="characters">
+            <img src="assets/kuromi.png" alt="Kuromi">
+            <img src="assets/hellokitty.png" alt="Hello Kitty">
+            <img src="assets/cinnamoroll.png" alt="Cinnamoroll">
+        </div>
+    </div>
+
+    <div id="game" class="page">
+        <h2>Trò Chơi: Tương Lai và Tình Yêu</h2>
+        <p>Bạn có muốn khám phá điều gì sẽ đến với bạn trong tương lai không?</p>
+        <button class="button" onclick="showPage('home')">Quay lại</button>
+    </div>
+
+    <div id="messages" class="page">
+        <h2>Lời Nhắn Yêu Thương</h2>
+        <p>\"Cậu là điều tuyệt vời nhất đối với tớ!\"</p>
+        <button class="button" onclick="showPage('home')">Quay lại</button>
+    </div>
+
+    <img src="assets/chibi1.png" class="chibi-run" alt="Chibi chạy">
+    <img src="assets/chibi2.png" class="chibi-run" style="animation-delay: 5s;" alt="Chibi chạy">
+
+    <script src="script.js"></script>
+</body>
+</html>
